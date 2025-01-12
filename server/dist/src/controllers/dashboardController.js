@@ -44,17 +44,17 @@ const getDashboardMetrics = (req, res) => __awaiter(void 0, void 0, void 0, func
                 date: "desc",
             },
         });
-        const expenseByCategory = expenseByCategorySummaryRaw.map((item) => (Object.assign(Object.assign({}, item), { amount: item.amount.toString() })));
+        const expenseByCategorySummary = expenseByCategorySummaryRaw.map((item) => (Object.assign(Object.assign({}, item), { amount: item.amount.toString() })));
         res.json({
             popularProducts,
             salesSummary,
             purchaseSummary,
             expenseSummary,
-            expenseByCategory,
+            expenseByCategorySummary,
         });
     }
     catch (error) {
-        res.status(500).json({ message: " Error fetching dashboard metrics" });
+        res.status(500).json({ message: "Error retrieving dashboard metrics" });
     }
 });
 exports.getDashboardMetrics = getDashboardMetrics;
