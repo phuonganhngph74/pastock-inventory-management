@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   apps: [
     {
       name: "inventory-management",
@@ -6,8 +6,8 @@ module.export = {
       args: "run dev",
       env: {
         NODE_ENV: "development",
-        ENV_VAR1: "environment-varialbe"
-      }
-    }
-  ]
-}
+        ENV_VAR1: "environment-variable",
+      },
+    },
+  ],
+};
