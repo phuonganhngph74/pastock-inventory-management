@@ -2,6 +2,7 @@
 
 # dependencies
 client/node_modules
+client/dist
 client/.pnp
 client/.pnp.*
 client/.yarn/*
@@ -39,3 +40,9 @@ client/.vercel
 # typescript
 client/*.tsbuildinfo
 client/next-env.d.ts
+
+
+# Server
+server/node_modules
+server/dist
+server/.env/

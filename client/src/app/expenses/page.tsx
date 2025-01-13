@@ -135,7 +135,7 @@ const Expenses = () => {
             {/* END DATE */}
             <div>
               <label htmlFor="end-date" className={classNames.label}>
-                Start Date
+                End Date
               </label>
               <input
                 name="end-date"

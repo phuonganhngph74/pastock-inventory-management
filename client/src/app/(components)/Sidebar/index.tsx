@@ -6,7 +6,6 @@ import {
   Archive,
   CircleDollarSign,
   Clipboard,
-  Icon,
   Layout,
   LucideIcon,
   Menu,
@@ -114,7 +113,7 @@ const Sidebar = () => {
         <SidebarLink
           href="/products"
           icon={Clipboard}
-          label="products "
+          label="Products "
           isCollapsed={isSidebarCollapsed}
         />
         <SidebarLink
