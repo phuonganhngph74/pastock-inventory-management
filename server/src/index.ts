@@ -8,6 +8,7 @@ import morgan from "morgan";
 import dashboardRoutes from "./routes/dashboardRoutes";
 import productRoutes from "./routes/productRoutes";
 import userRoutes from "./routes/userRoutes";
+import expenseRoutes from "./routes/expenseRoutes";
 
 
 /* CONFIGURATION */
@@ -33,8 +34,8 @@ app.use("/products", productRoutes);
 // http://localhost:8000/users
 app.use("/users", userRoutes);
 
-
-
+// http://localhost:8000/expenses
+app.use("/expenses", expenseRoutes);
 
 /* SERVER */
 
